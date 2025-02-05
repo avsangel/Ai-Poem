@@ -1,1 +1,1 @@
-alert("sup");
+display("sup");
