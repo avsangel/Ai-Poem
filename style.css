@@ -30,7 +30,7 @@ header {
 .instructions {
   padding: 10px;
   border: 1px solid salmon;
-  width: 80%;
+  width: 100px;
   font-size: 16px;
   border-radius: 50px;
   line-height: 20px;
