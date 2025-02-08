@@ -1,5 +1,6 @@
 h1 {
   color: pink;
+  line-height: 1.5;
 }
 body {
   background: linear-gradient(
@@ -8,4 +9,9 @@ body {
     rgb(201, 234, 211) 56.6%,
     rgb(255, 180, 189) 90.9%
   );
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
 }
