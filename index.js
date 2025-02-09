@@ -1,5 +1,5 @@
 function generatePoem(event) {
-  event.preventDefault;
+  event.preventDefault();
 
   new Typewriter("#poem", {
     strings: "the poem goes here",
