@@ -1,12 +1,21 @@
-function generatePoem(event) {
-  event.preventDefault();
-
+function displayPoem(response) {
   new Typewriter("#poem", {
-    strings: "the poem goes here",
+    strings: response.data.answer,
     autoStart: true,
     delay: 1,
     cursor: "",
   });
+}
+
+function generatePoem(event) {
+  event.preventDefault();
+
+  let apiKey = "66e942064o99c86ea1f3a0t6dbadb31b";
+  let context = "be polite and provide a very short answer";
+  let prompt = "write me a poem";
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  axios.get(apiUrl).then(displayPoem);
 }
 
 let poemFormElement = document.querySelector("#poem-generator-form");
